@@ -1,0 +1,45 @@
+# --- OS spécifiques ---
+.DS_Store
+Thumbs.db
+*.swp
+
+# --- IDE et Éditeurs ---
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# --- Langages & Build (C/C++, Python, Java) ---
+# Objets et Binaires
+*.o
+*.obj
+*.exe
+*.out
+*.bin
+build/
+dist/
+bin/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+
+# --- Données GPS & Logs (Le cœur du sujet) ---
+# On ignore les logs bruts souvent très lourds
+*.log
+*.nmea
+*.ubx
+*.raw
+
+# Si tu génères des fichiers de traces pour test
+temp_traces/
+output_data/
+
+# --- Sécurité ---
+.env
+*.pem
+*.key

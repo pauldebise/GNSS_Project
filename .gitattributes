@@ -1,0 +1,22 @@
+# Gestion automatique des fins de ligne (LF vs CRLF)
+* text=auto
+
+# On s'assure que les scripts restent en LF (important pour Linux/Embarqué)
+*.sh text eol=lf
+*.py text eol=lf
+
+# Définir les formats GPS comme du texte pour pouvoir voir les "diff"
+*.gpx text
+*.kml text
+*.geojson text
+*.osm text
+
+# Marquer les fichiers de données brutes ou cartographies comme binaires
+*.db binary
+*.sqlite binary
+*.mbtiles binary
+*.bin binary
+
+# Si tu utilises Git LFS pour les grosses traces (recommandé)
+# *.nmea filter=lfs diff=lfs merge=lfs -text
+# *.ubx filter=lfs diff=lfs merge=lfs -text
